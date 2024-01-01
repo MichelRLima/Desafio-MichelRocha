@@ -9,7 +9,7 @@ Esse projeto foi desenvolvido como um teste técnico para a vaga de desenvolvedo
 
 ## Instalação do Projeto
 ### Instalação do projeto front-end
-1. Clone o repositório: `git clone https://github.com/MichelRLima/Desafio-Front`
+1. Clone o repositório: `git clone https://github.com/MichelRLima/Desafio-MichelRocha`
 2. Navegue até o diretório do projeto: `cd desafio-frontend`
 3. Instale as dependências: `npm install`
 
