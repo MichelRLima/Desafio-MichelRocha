@@ -1,0 +1,253 @@
+.BimestreContener {
+
+    width: 100%;
+    max-width: 855px;
+    margin: 10px auto;
+}
+
+.TituloContener {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allDisciplinas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.DisciplinasContainer {
+    display: flex;
+    margin: 0 5px;
+
+}
+
+.IconBin {
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.TextBimestre {
+
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 40px;
+
+}
+
+
+.IconMore {
+    margin-bottom: -40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.IconMoreDesktop {
+    margin-bottom: -40px;
+    cursor: pointer;
+}
+
+.DisciplinasContener {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.CardDisciplinasContener {
+    width: 100%;
+
+    height: 60px;
+    background: #000000CC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+}
+
+.addDisciplinasContener {
+
+
+    height: 350px;
+    background-color: #0F0F0F;
+    max-width: 800px;
+    margin: 0 20px;
+
+}
+
+.TituloAddDisciplinasContener {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.TituloAddDisciplinas {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 18px;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+
+}
+
+.IconCloser {
+    color: #FFFFFF;
+    margin-top: 2em;
+    margin-right: 2em;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.AddDisciplinas {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    height: 30px;
+
+}
+
+.TextDisciplina {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 10px;
+}
+
+.Disciplinas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttonDisciplina {
+
+    all: unset;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.InputNota {
+
+    all: unset;
+    width: 60px;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(170, 170, 170);
+    border: 1px solid rgb(80, 80, 80);
+    font-size: 12px;
+    text-align: center;
+
+
+
+}
+
+.InputNota::-webkit-inner-spin-button,
+.InputNota::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+.NotaContener {
+
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.TextNota {
+    color: #888888;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 0.5em;
+}
+
+.buttonConfirmContener {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+
+}
+
+.buttonConfirm {
+    all: unset;
+    color: #0f0f0f;
+    padding: 10px 20px;
+    background-color: #e9ff1a;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 716px) {
+
+    .IconMoreDesktop {
+        display: none;
+    }
+
+    .IconMore {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .addDisciplinasContener {
+
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .addDisciplinasContener {
+
+        height: 550px;
+    }
+}

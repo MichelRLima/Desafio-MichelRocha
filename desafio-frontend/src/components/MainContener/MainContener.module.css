@@ -1,0 +1,10 @@
+.MainContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0F0F0F;
+    min-height: 100vh;
+    overflow: hidden;
+}

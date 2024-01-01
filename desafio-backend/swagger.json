@@ -1,0 +1,141 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Node.js - Desafio técnico (Backend)",
+        "description": "API criada para um teste técnico com node.js",
+        "termOfService": "http://localhost:3333/terms",
+        "contact": {
+            "email": "michelrocha502@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/disciplina": {
+            "post": {
+                "description": "Adicionar nota na disciplina",
+                "requestBody": {
+                    "description": "Dados necessarios para adicionar uma nota na disciplina",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/RequestCreateDisciplina"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseCreateDisciplina"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/disciplina/remove?disciplina_id={id}": {
+            "delete": {
+                "description": "Remover disciplina com a nota",
+                "parameters": [
+                    {
+                        "name": "disciplina_id",
+                        "in": "query",
+                        "description": "ID da disciplina cadastrada",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseDeleteDisciplina"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/disciplina/list": {
+            "get": {
+                "description": "Listar todas as disciplinas",
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseGetAllDisciplinas"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "RequestCreateDisciplina": {
+                "type": "object",
+                "properties": {
+                    "bimestre": {
+                        "type": "string"
+                    },
+                    "disciplina": {
+                        "type": "string"
+                    },
+                    "nota": {
+                        "type": "number"
+                    }
+                }
+            },
+            "ResponseCreateDisciplina": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "bimestre": {
+                        "type": "string"
+                    },
+                    "disciplina": {
+                        "type": "string"
+                    },
+                    "nota": {
+                        "type": "number"
+                    },
+                    "criadoEm": {
+                        "type": "string"
+                    }
+                }
+            },
+            "ResponseDeleteDisciplina": {
+                "type": "string"
+            },
+            "ResponseGetAllDisciplinas": {
+                "type": "array",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "bimestre": {
+                        "type": "string"
+                    },
+                    "disciplina": {
+                        "type": "string"
+                    },
+                    "nota": {
+                        "type": "number"
+                    },
+                    "criadoEm": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

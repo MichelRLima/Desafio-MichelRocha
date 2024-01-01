@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Resultado {
+  id           String     @id @default(uuid())
+  bimestre     Bimestre
+  disciplina   Disciplina
+  nota         Float
+  criadoEm     DateTime?  @default(now())
+  atualizadoEm DateTime?  @default(now())
+
+  @@map("resultado")
+}
+
+// Definindo o Enum para bimestre
+enum Bimestre {
+  PRIMEIRO
+  SEGUNDO
+  TERCEIRO
+  QUARTO
+}
+
+// Definindo o Enum para disciplina
+enum Disciplina {
+  Biologia
+  Artes
+  Geografia
+  Sociologia
+}
