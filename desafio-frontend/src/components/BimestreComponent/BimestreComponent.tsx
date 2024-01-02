@@ -150,7 +150,7 @@ const BimestreComponent = (props: Props) => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    await axios.delete(`https://desafio-backend-fd7h.onrender.com/remove?disciplina_id=${id}`);
+                    await axios.delete(`https://desafio-backend-fd7h.onrender.com/disciplina/remove?disciplina_id=${id}`);
                     setDisciplinas((prevDisciplinas) => prevDisciplinas.filter((disciplina) => disciplina.id !== id));
                     console.log('Excluiu disciplina');
 
